@@ -42,10 +42,9 @@ function App() {
         <div>{scoreRef.current}/5</div>
       </div>
       {testList.map((data)=>(
-        <>
+        <div key={data.id}>
           {(currentQuestion === data.id) && (
             <Question 
-              key={data.id} 
               id={data.id}
               value={data.value}
               ans={data.ans}
@@ -53,7 +52,7 @@ function App() {
               buttonClick={buttonClick}
             />
           )}
-        </>
+        </div>
       ))}
     </div>
   );
