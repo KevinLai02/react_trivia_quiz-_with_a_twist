@@ -1,6 +1,6 @@
 import React from "react";
 
-export interface QuestionT {
+interface QuestionT {
     id: number
     value: string
     section: SectionT
